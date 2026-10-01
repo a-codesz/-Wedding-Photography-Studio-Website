@@ -1,0 +1,43 @@
+<nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-colors duration-300">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="#" class="text-xl font-bold navbar-text">Wedding 𝓢tudio Pro</a>
+    <div class="hidden md:flex gap-8 font-medium">
+      <a href="index.html" class="navbar-text hover:opacity-70 transition">Home</a>
+      <a href="portfolio.html" class="navbar-text hover:opacity-70 transition">Portfolio</a>
+      <a href="services.html" class="navbar-text hover:opacity-70 transition">Services</a>
+      <a href="contact.html" class="navbar-text hover:opacity-70 transition">Pricing</a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const navbar = document.getElementById('navbar');
+  const hasHero = document.querySelector('.hero-section'); // only true on pages with a hero
+
+  function applyTextColor(isDark) {
+    navbar.querySelectorAll('.navbar-text').forEach(el => {
+      el.classList.toggle('text-white', isDark);
+      el.classList.toggle('text-gray-900', !isDark);
+    });
+  }
+
+  if (hasHero) {
+    // Transparent-over-hero behavior
+    applyTextColor(true);
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('bg-white/90', 'backdrop-blur-md', 'shadow-sm');
+        navbar.classList.remove('bg-transparent');
+        applyTextColor(false);
+      } else {
+        navbar.classList.add('bg-transparent');
+        navbar.classList.remove('bg-white/90', 'backdrop-blur-md', 'shadow-sm');
+        applyTextColor(true);
+      }
+    });
+  } else {
+    // Solid navbar for pages without a hero
+    navbar.classList.add('bg-white', 'shadow-sm');
+    applyTextColor(false);
+  }
+</script>

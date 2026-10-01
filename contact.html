@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique Photography Website</title>
+  <link rel="stylesheet" href="css/nav.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="nav.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+    <div id="nav-placeholder">
+    </div>
+
+<section class="bg-white py-16 px-6">
+    <h1 class="text-center text-3xl md:text-4xl italic font-serif text-gray-800">
+      REQUEST PRICING
+    </h1>
+  </section>
+
+  <section
+  class="relative bg-cover bg-center h-[250px] md:h-[350px]  flex items-center justify-center"
+  style="background-image: url('assets/contact.jpg');"
+   >
+  <!-- Light overlay for text readability -->
+  <div class="absolute inset-0 bg-black/10"></div>
+
+  <!-- Text -->
+  <h2 class="relative z-10 text-2xl md:text-3xl tracking-[0.3em] uppercase text-white font-serif">
+    Book Your Experience
+  </h2>
+</section>
+
+<section class="bg-white py-16 px-6">
+  <form class="max-w-xl mx-auto space-y-6">
+
+    <!-- First Name -->
+    <div>
+      <label class="block text-sm font-medium text-indigo-900">
+        First Name <span class="text-red-500">*</span>
+      </label>
+      <input
+        type="text"
+        placeholder="ie. Jane"
+        class="mt-2 w-full px-4 py-3 bg-slate-100 border border-slate-200 rounded text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-300"
+      />
+    </div>
+
+    <!-- Last Name -->
+    <div>
+      <label class="block text-sm font-medium text-indigo-900">
+        Last Name <span class="text-red-500">*</span>
+      </label>
+      <input
+        type="text"
+        placeholder="ie. Smith"
+        class="mt-2 w-full px-4 py-3 bg-slate-100 border border-slate-200 rounded text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-300"
+      />
+    </div>
+
+    <!-- Email -->
+    <div>
+      <label class="block text-sm font-medium text-indigo-900">
+        Email <span class="text-red-500">*</span>
+      </label>
+      <input
+        type="email"
+        placeholder="Enter your email"
+        class="mt-2 w-full px-4 py-3 bg-slate-100 border border-slate-200 rounded text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-300"
+      />
+    </div>
+
+    <!-- Phone -->
+    <div>
+      <label class="block text-sm font-medium text-indigo-900">
+        Phone <span class="text-red-500">*</span>
+      </label>
+      <input
+        type="tel"
+        placeholder="Enter your phone"
+        class="mt-2 w-full px-4 py-3 bg-slate-100 border border-slate-200 rounded text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-300"
+      />
+    </div>
+
+    <!-- Wedding Date -->
+    <div>
+      <label class="block text-sm font-medium text-indigo-900">
+        Wedding Date <span class="text-red-500">*</span>
+      </label>
+      <div class="relative mt-2">
+        <input
+          type="date"
+          placeholder="Choose date"
+          class="w-full px-4 py-3 bg-slate-100 border border-slate-200 rounded text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-300 appearance-none"
+        />
+      </div>
+    </div>
+
+    <!-- How did you hear about us -->
+    <div>
+      <label class="block text-sm font-medium text-indigo-900">
+        How did you hear about us? <span class="text-red-500">*</span>
+      </label>
+      <select
+        class="mt-2 w-full px-4 py-3 bg-slate-100 border border-slate-200 rounded text-sm text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-300"
+      >
+        <option value="">Choose your option</option>
+        <option value="instagram">Instagram</option>
+        <option value="google">Google Search</option>
+        <option value="referral">Referral</option>
+        <option value="pinterest">Pinterest</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <!-- Location/Venue -->
+    <div>
+      <label class="block text-sm font-medium text-indigo-900">
+        Location/Venue <span class="text-red-500">*</span>
+      </label>
+      <input
+        type="text"
+        placeholder="Enter your message"
+        class="mt-2 w-full px-4 py-3 bg-slate-100 border border-slate-200 rounded text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-300"
+      />
+    </div>
+
+    <!-- Photography/Cinematography stood out -->
+    <div>
+      <label class="block text-sm font-medium text-indigo-900">
+        What about our Photography/Cinematography stood out to you? <span class="text-red-500">*</span>
+      </label>
+      <textarea
+        rows="3"
+        placeholder="ie. your ability to capture the raw emotion of wedding days"
+        class="mt-2 w-full px-4 py-3 bg-slate-100 border border-slate-200 rounded text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-300 resize-none"
+      ></textarea>
+    </div>
+
+    <!-- Qualities looking for -->
+    <div>
+      <label class="block text-sm font-medium text-indigo-900">
+        What are some qualities you're looking for in your Photographer? <span class="text-red-500">*</span>
+      </label>
+      <textarea
+        rows="3"
+        placeholder="ie. reading the emotion, anticipating the moment, clear communication, etc."
+        class="mt-2 w-full px-4 py-3 bg-slate-100 border border-slate-200 rounded text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-300 resize-none"
+      ></textarea>
+    </div>
+
+    <!-- Submit -->
+    <div>
+      <button
+        type="submit"
+        class="w-full md:w-auto px-8 py-3 bg-indigo-900 text-white text-xs tracking-widest uppercase rounded hover:bg-indigo-800 transition"
+      >
+        Submit
+      </button>
+    </div>
+
+  </form>
+</section>
+
+<div id="footer-placeholder">
+</div>
+
+<script>
+  $(function(){
+    $("#nav-placeholder").load("nav.html");
+  });
+  $(function(){
+    $("#footer-placeholder").load("footer.html");
+  });
+  </script>
+
+</body>
+</html>
